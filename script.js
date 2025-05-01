@@ -49,8 +49,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const accessibilityToggle = document.querySelector('.accessibility-toggle');
     const accessibilityPanel = document.querySelector('.accessibility-panel');
 
+    // Ensure panel is hidden by default
+    accessibilityPanel.classList.add('hidden');
+
     accessibilityToggle.addEventListener('click', () => {
         accessibilityPanel.classList.toggle('hidden');
+        // Add visual feedback to toggle button
+        accessibilityToggle.classList.toggle('bg-blue-700');
     });
 
     // Accessibility Settings
@@ -157,3 +162,28 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+// Optional CSS for accessibility and modal
+const style = document.createElement('style');
+style.textContent = `
+    .high-contrast {
+        background: #000 !important;
+        color: #fff !important;
+    }
+    .text-size-large {
+        font-size: 1.2em !important;
+    }
+    .text-size-x-large {
+        font-size: 1.4em !important;
+    }
+    .color-blind-protanopia {
+        filter: hue-rotate(20deg);
+    }
+    .color-blind-deuteranopia {
+        filter: hue-rotate(40deg);
+    }
+    .color-blind-tritanopia {
+        filter: hue-rotate(60deg);
+    }
+`;
+document.head.appendChild(style);
