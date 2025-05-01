@@ -1,5 +1,5 @@
 // Optional CSS for accessibility and modal (should be in HTML or separate CSS if needed)
-const style = document.createElement('style');
+const style = document.createElement('styles');
 style.textContent = `
     .high-contrast {
         background: #000 !important;
@@ -21,4 +21,4 @@ style.textContent = `
         filter: hue-rotate(60deg);
     }
 `;
-document.head.appendChild(style);
+document.head.appendChild(styles);
