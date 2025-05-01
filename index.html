@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enterprise Templates & Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="importmap">
+    {
+        "imports": {
+            "gsap": "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        }
+    }
+    </script>
+    <script src="script.js" type="module"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+    <nav class="sticky top-0 bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-gray-800">Enterprise Solutions</h1>
+            <div class="flex space-x-6 items-center">
+                <a href="#top-picks" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Top Picks</a>
+                <a href="#templates-library" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Templates</a>
+                <a href="#demo-code" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Demo Code</a>
+                <a href="#web-dev-projects" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Projects</a>
+                <button class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transform hover:scale-105 transition-all duration-300 animate-pulse">
+                    FREE AUDIT
+                </button>
+            </div>
+        </div>
+    </nav>
+    <div class="container mx-auto px-4">
+        <header class="py-16 text-center">
+            <div class="header-content max-w-3xl mx-auto">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4 animate-fade-in">Accelerate Strategy with Actionable Templates & Code Projects</h1>
+                <p class="text-lg text-gray-600 mb-6">Practical tools for marketers, analysts, and devs — ready to use and built for results.</p>
+                <button class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transform hover:scale-105 transition-all duration-300">Browse Templates & Projects</button>
+            </div>
+        </header>
+        <main>
+            <section id="top-picks" class="py-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Top Picks</h2>
+                <div class="flex justify-center space-x-4 mb-8">
+                    <button class="chip px-4 py-2 bg-gray-200 rounded-full hover:bg-gray-300 transition-colors duration-300 active:bg-blue-600 active:text-white" data-filter="all">All</button>
+                    <button class="chip px-4 py-2 bg-gray-200 rounded-full hover:bg-gray-300 transition-colors duration-300" data-filter="premium">Premium</button>
+                    <button class="chip px-4 py-2 bg-gray-200 rounded-full hover:bg-gray-300 transition-colors duration-300" data-filter="free">Free</button>
+                    <button class="chip px-4 py-2 bg-gray-200 rounded-full hover:bg-gray-300 transition-colors duration-300" data-filter="client-favorite">Client Favorite</button>
+                </div>
+                <div class="product-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                        <span class="badge free absolute top-2 left-2 bg-green-500 text-white px-2 py-1 rounded">Free</span>
+                        <div class="product-image">
+                            <img src="/dashboard-template.png" alt="Local SEO Dashboard Template" class="w-full h-48 object-cover">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold text-gray-800">Local SEO Dashboard</h3>
+                            <p class="text-gray-600">Track your local search performance with this comprehensive dashboard.</p>
+                        </div>
+                    </div>
+                    <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                        <span class="badge premium absolute top-2 left-2 bg-purple-500 text-white px-2 py-1 rounded">Premium</span>
+                        <div class="product-image">
+                            <img src="/dashboard-template.png" alt="KPI Tracker Template" class="w-full h-48 object-cover">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold text-gray-800">KPI Tracker</h3>
+                            <p class="usage text-sm text-gray-500">Usage stats</p>
+                            <p class="text-gray-600">Monitor your key performance indicators in one place.</p>
+                        </div>
+                    </div>
+                    <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                        <span class="badge free absolute top-2 left-2 bg-green-500 text-white px-2 py-1 rounded">Free</span>
+                        <div class="product-image">
+                            <img src="/social-media-template.png" alt="Content Calendar Template" class="w-full h-48 object-cover">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold text-gray-800">Content Calendar</h3>
+                            <p class="text-gray-600">Plan and schedule your content across multiple platforms.</p>
+                        </div>
+                    </div>
+                    <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                        <span class="badge client-favorite absolute top-2 left-2 bg-yellow-500 text-white px-2 py-1 rounded">Client Favorite</span>
+                        <div class="product-image">
+                            <img src="/dashboard-template.png" alt="Marketing Report Template" class="w-full h-48 object-cover">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold text-gray-800">Marketing Report</h3>
+                            <p class="text-gray-600">Present your marketing results with clarity and impact.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="templates-library" class="py-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Templates Library</h2>
+                <div class="library-container flex flex-col md:flex-row gap-6">
+                    <div class="library-sidebar bg-white p-6 rounded-lg shadow-md w-full md:w-1/4">
+                        <div class="sidebar-section mb-6">
+                            <h3 class="text-lg font-semibold text-gray-800 mb-4">Category</h3>
+                            <div class="category-list space-y-2">
+                                <label class="custom-checkbox flex items-center"><input type="checkbox" name="category" value="seo" class="mr-2"> SEO</label>
+                                <label class="custom-checkbox flex items-center"><input type="checkbox" name="category" value="marketing" class="mr-2"> Marketing Docs</label>
+                                <label class="custom-checkbox flex items-center"><input type="checkbox" name="category" value="crm" class="mr-2"> CRM</label>
+                                <label class="custom-checkbox flex items-center"><input type="checkbox" name="category" value="planning" class="mr-2"> Planning</label>
+                            </div>
+                        </div>
+                        <div class="sidebar-section mb-6">
+                            <h3 class="text-lg font-semibold text-gray-800 mb-4">Price</h3>
+                            <div class="space-y-2">
+                                <label class="custom-checkbox flex items-center"><input type="checkbox" name="price" value="free" class="mr-2"> Free</label>
+                                <label class="custom-checkbox flex items-center"><input type="checkbox" name="price" value="premium" class="mr-2"> Premium</label>
+                            </div>
+                        </div>
+                        <button class="apply-filters-button bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 w-full transition-colors duration-300">Apply Filters</button>
+                    </div>
+                    <div class="library-content w-full md:w-3/4">
+                        <div class="search-container flex mb-6">
+                            <input type="search" placeholder="Search templates" class="search-input flex-grow px-4 py-2 rounded-l-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600">
+                            <button class="search-button bg-blue-600 text-white px-4 py-2 rounded-r-full hover:bg-blue-700 transition-colors duration-300"><span class="search-icon">🔍</span></button>
+                        </div>
+                        <div class="product-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                                <span class="badge free absolute top-2 left-2 bg-green-500 text-white px-2 py-1 rounded">Free</span>
+                                <div class="product-image">
+                                    <img src="/a/5c9054df-b917-43f5-9dfa-2834ae804bd1" alt="SEO Audit Checklist Template" class="w-full h-48 object-cover">
+                                </div>
+                                <div class="p-4">
+                                    <h3 class="text-xl font-semibold text-gray-800">SEO Audit Checklist</h3>
+                                    <div class="product-actions flex space-x-2 mt-4">
+                                        <button class="view-template-button bg-gray-200 px-4 py-2 rounded-full hover:bg-gray-300 transition-colors duration-300">View Template</button>
+                                        <button class="download-button bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition-colors duration-300">Download</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                                <span class="badge free absolute top-2 left-2 bg-green-500 text-white px-2 py-1 rounded">Free</span>
+                                <div class="product-image">
+                                    <img src="/a/5c9054df-b917-43f5-9dfa-2834ae804bd1" alt="Social Media Planner Template" class="w-full h-48 object-cover">
+                                </div>
+                                <div class="p-4">
+                                    <h3 class="text-xl font-semibold text-gray-800">Social Media Planner</h3>
+                                    <div class="product-actions flex space-x-2 mt-4">
+                                        <button class="view-template-button bg-gray-200 px-4 py-2 rounded-full hover:bg-gray-300 transition-colors duration-300">View Template</button>
+                                        <button class="download-button bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition-colors duration-300">Download</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                                <span class="badge free absolute top-2 left-2 bg-green-500 text-white px-2 py-1 rounded">Free</span>
+                                <div class="product-image">
+                                    <img src="/a/5c9054df-b917-43f5-9dfa-2834ae804bd1" alt="Sales CRM Template" class="w-full h-48 object-cover">
+                                </div>
+                                <div class="p-4">
+                                    <h3 class="text-xl font-semibold text-gray-800">Sales CRM</h3>
+                                    <div class="product-actions flex space-x-2 mt-4">
+                                        <button class="view-template-button bg-gray-200 px-4 py-2 rounded-full hover:bg-gray-300 transition-colors duration-300">View Template</button>
+                                        <button class="download-button bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition-colors duration-300">Download</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                                <span class="badge free absolute top-2 left-2 bg-green-500 text-white px-2 py-1 rounded">Free</span>
+                                <div class="product-image">
+                                    <img src="/a/5c9054df-b917-43f5-9dfa-2834ae804bd1" alt="Website Analytics Dashboard Template" class="w-full h-48 object-cover">
+                                </div>
+                                <div class="p-4">
+                                    <h3 class="text-xl font-semibold text-gray-800">Website Analytics Dashboard</h3>
+                                    <div class="product-actions flex space-x-2 mt-4">
+                                        <button class="view-template-button bg-gray-200 px-4 py-2 rounded-full hover:bg-gray-300 transition-colors duration-300">View Template</button>
+                                        <button class="download-button bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition-colors duration-300">Download</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                                <span class="badge free absolute top-2 left-2 bg-green-500 text-white px-2 py-1 rounded">Free</span>
+                                <div class="product-image">
+                                    <img src="/a/5c9054df-b917-43f5-9dfa-2834ae804bd1" alt="Project Tracker Template" class="w-full h-48 object-cover">
+                                </div>
+                                <div class="p-4">
+                                    <h3 class="text-xl font-semibold text-gray-800">Project Tracker</h3>
+                                    <div class="product-actions flex space-x-2 mt-4">
+                                        <button class="view-template-button bg-gray-200 px-4 py-2 rounded-full hover:bg-gray-300 transition-colors duration-300">View Template</button>
+                                        <button class="download-button bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition-colors duration-300">Download</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                                <span class="badge free absolute top-2 left-2 bg-green-500 text-white px-2 py-1 rounded">Free</span>
+                                <div class="product-image">
+                                    <img src="/a/5c9054df-b917-43f5-9dfa-2834ae804bd1" alt="Ad Campaign Tracker Template" class="w-full h-48 object-cover">
+                                </div>
+                                <div class="p-4">
+                                    <h3 class="text-xl font-semibold text-gray-800">Ad Campaign Tracker</h3>
+                                    <div class="product-actions flex space-x-2 mt-4">
+                                        <button class="view-template-button bg-gray-200 px-4 py-2 rounded-full hover:bg-gray-300 transition-colors duration-300">View Template</button>
+                                        <button class="download-button bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition-colors duration-300">Download</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                                <span class="badge premium absolute top-2 left-2 bg-purple-500 text-white px-2 py-1 rounded">Premium</span>
+                                <div class="product-image">
+                                    <img src="/a/5c9054df-b917-43f5-9dfa-2834ae804bd1" alt="Invoice Template" class="w-full h-48 object-cover">
+                                </div>
+                                <div class="p-4">
+                                    <h3 class="text-xl font-semibold text-gray-800">Invoice Template</h3>
+                                    <div class="product-actions flex space-x-2 mt-4">
+                                        <button class="view-template-button bg-gray-200 px-4 py-2 rounded-full hover:bg-gray-300 transition-colors duration-300">View Template</button>
+                                        <button class="download-button bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition-colors duration-300">Download</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                                <span class="badge premium absolute top-2 left-2 bg-purple-500 text-white px-2 py-1 rounded">Premium</span>
+                                <div class="product-image">
+                                    <img src="/a/5c9054df-b917-43f5-9dfa-2834ae804bd1" alt="Budget Planner Template" class="w-full h-48 object-cover">
+                                </div>
+                                <div class="p-4">
+                                    <h3 class="text-xl font-semibold text-gray-800">Budget Planner</h3>
+                                    <div class="product-actions flex space-x-2 mt-4">
+                                        <button class="view-template-button bg-gray-200 px-4 py-2 rounded-full hover:bg-gray-300 transition-colors duration-300">View Template</button>
+                                        <button class="download-button bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition-colors duration-300">Download</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                                <span class="badge free absolute top-2 left-2 bg-green-500 text-white px-2 py-1 rounded">Free</span>
+                                <div class="product-image">
+                                    <img src="/a/5c9054df-b917-43f5-9dfa-2834ae804bd1" alt="Email Marketing Template" class="w-full h-48 object-cover">
+                                </div>
+                                <div class="p-4">
+                                    <h3 class="text-xl font-semibold text-gray-800">Email Marketing Template</h3>
+                                    <div class="product-actions flex space-x-2 mt-4">
+                                        <button class="view-template-button bg-gray-200 px-4 py-2 rounded-full hover:bg-gray-300 transition-colors duration-300">View Template</button>
+                                        <button class="download-button bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition-colors duration-300">Download</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="demo-code" class="card-section py-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Demo Code</h2>
+                <div class="code-container bg-white p-6 rounded-lg shadow-md">
+                    <div class="code-navigation flex justify-between items-center mb-4">
+                        <div class="code-tabs flex space-x-2">
+                            <button class="tab-button px-4 py-2 bg-gray-200 rounded-full hover:bg-gray-300 transition-colors duration-300 active:bg-blue-600 active:text-white" data-tab="html">HTML</button>
+                            <button class="tab-button px-4 py-2 bg-gray-200 rounded-full hover:bg-gray-300 transition-colors duration-300" data-tab="css">CSS</button>
+                            <button class="tab-button px-4 py-2 bg-gray-200 rounded-full hover:bg-gray-300 transition-colors duration-300" data-tab="js">JS</button>
+                        </div>
+                        <button class="copy-all-button bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition-colors duration-300">Copy All</button>
+                    </div>
+                    <div class="code-content">
+                        <div class="code-block" data-tab-content="html">
+                            <div class="code-header flex justify-between items-center mb-2">
+                                <span></span>
+                                <button class="copy-button bg-gray-200 px-4 py-2 rounded-full hover:bg-gray-300 transition-colors duration-300">Copy</button>
+                            </div>
+                            <pre><code class="language-html"><div class="container">
+    <h1>Hello World</h1>
+    <p>This is demo HTML code.</p>
+</div></code></pre>
+                        </div>
+                        <div class="code-block" data-tab-content="css" style="display: none;">
+                            <div class="code-header flex justify-between items-center mb-2">
+                                <span></span>
+                                <button class="copy-button bg-gray-200 px-4 py-2 rounded-full hover:bg-gray-300 transition-colors duration-300">Copy</button>
+                            </div>
+                            <pre><code class="language-css">.container {
+    font-family: sans-serif;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}</code></pre>
+                        </div>
+                        <div class="code-block" data-tab-content="js" style="display: none;">
+                            <div class="code-header flex justify-between items-center mb-2">
+                                <span></span>
+                                <button class="copy-button bg-gray-200 px-4 py-2 rounded-full hover:bg-gray-300 transition-colors duration-300">Copy</button>
+                            </div>
+                            <pre><code class="language-javascript">console.log('This is demo JavaScript code.');
+
+document.addEventListener('DOMContentLoaded', () => {
+    alert('Page is loaded!');
+});</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="web-dev-projects" class="card-section py-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Web Development Projects</h2>
+                <div class="project-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                        <span class="badge interactive absolute top-2 left-2 bg-blue-500 text-white px-2 py-1 rounded">Interactive</span>
+                        <div class="product-image">
+                            <img src="/a/5c9054df-b917-43f5-9dfa-2834ae804bd1" alt="Schemes Markup Visualizer Project" class="w-full h-48 object-cover">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold text-gray-800">Schemes Markup Visualizer</h3>
+                            <div class="product-actions flex space-x-2 mt-4">
+                                <button class="live-demo-button bg-gray-200 px-4 py-2 rounded-full hover:bg-gray-300 transition-colors duration-300">Live Demo</button>
+                                <button class="view-code-button bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition-colors duration-300">View Code</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                        <span class="badge client-project absolute top-2 left-2 bg-red-500 text-white px-2 py-1 rounded">Client Project</span>
+                        <div class="product-image">
+                            <img src="/a/5c9054df-b917-43f5-9dfa-2834ae804bd1" alt="Local Services Ad Audit Project" class="w-full h-48 object-cover">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold text-gray-800">Local Services Ad Audit</h3>
+                            <div class="product-actions flex space-x-2 mt-4">
+                                <button class="open-source-button bg-gray-200 px-4 py-2 rounded-full hover:bg-gray-300 transition-colors duration-300">Open Source</button>
+                                <button class="view-code-button bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition-colors duration-300">View Code</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                        <span class="badge interactive absolute top-2 left-2 bg-blue-500 text-white px-2 py-1 rounded">Interactive</span>
+                        <div class="product-image">
+                            <img src="/a/5c9054df-b917-43f5-9dfa-2834ae804bd1" alt="CSS Animation Library Project" class="w-full h-48 object-cover">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold text-gray-800">CSS Animation Library</h3>
+                            <div class="product-actions flex space-x-2 mt-4">
+                                <button class="live-demo-button bg-gray-200 px-4 py-2 rounded-full hover:bg-gray-300 transition-colors duration-300">Live Demo</button>
+                                <button class="view-code-button bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition-colors duration-300">View Code</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                        <span class="badge client-project absolute top-2 left-2 bg-red-500 text-white px-2 py-1 rounded">Client Project</span>
+                        <div class="product-image">
+                            <img src="/a/5c9054df-b917-43f5-9dfa-2834ae804bd1" alt="React Component Portfolio Project" class="w-full h-48 object-cover">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold text-gray-800">React Component Portfolio</h3>
+                            <div class="product-actions flex space-x-2 mt-4">
+                                <button class="open-source-button bg-gray-200 px-4 py-2 rounded-full hover:bg-gray-300 transition-colors duration-300">Open Source</button>
+                                <button class="view-code-button bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition-colors duration-300">View Code</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <div class="accessibility-widget fixed bottom-4 right-4">
+            <button class="accessibility-toggle bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700 transition-colors duration-300">
+                <i class="fas fa-cog"></i>
+            </button>
+            <div class="accessibility-panel hidden bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-lg font-semibold text-gray-800 mb-4">Accessibility Settings</h3>
+                <div class="accessibility-option mb-4">
+                    <label for="high-contrast" class="block text-gray-600">High Contrast</label>
+                    <input type="checkbox" id="high-contrast" class="mt-2">
+                </div>
+                <div class="accessibility-option mb-4">
+                    <label for="reduced-motion" class="block text-gray-600">Reduced Motion (Seizure Safe)</label>
+                    <input type="checkbox" id="reduced-motion" class="mt-2">
+                </div>
+                <div class="accessibility-option mb-4">
+                    <label for="color-blind-mode" class="block text-gray-600">Color Blind Mode</label>
+                    <select id="color-blind-mode" class="w-full mt-2 p-2 border rounded">
+                        <option value="none">None</option>
+                        <option value="protanopia">Protanopia</option>
+                        <option value="deuteranopia">Deuteranopia</option>
+                        <option value="tritanopia">Tritanopia</option>
+                    </select>
+                </div>
+                <div class="accessibility-option">
+                    <label for="text-size" class="block text-gray-600">Text Size</label>
+                    <select id="text-size" class="w-full mt-2 p-2 border rounded">
+                        <option value="normal">Normal</option>
+                        <option value="large">Large</option>
+                        <option value="x-large">Extra Large</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <footer class="bg-gray-800 text-white py-8">
+            <div class="footer-content container mx-auto px-4">
+                <div class="footer-links flex justify-center space-x-6 mb-4">
+                    <a href="#" class="hover:text-blue-400 transition-colors duration-300">About</a>
+                    <a href="#" class="hover:text-blue-400 transition-colors duration-300">Contact</a>
+                    <a href="#" class="hover:text-blue-400 transition-colors duration-300">Privacy Policy</a>
+                    <a href="#" class="hover:text-blue-400 transition-colors duration-300">Terms of Service</a>
+                </div>
+                <p class="text-center">© 2025 Enterprise Templates & Solutions</p>
+            </div>
+        </footer>
+    </div>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeIn 1s ease-out forwards;
+        }
+    </style>
+</body>
+</html>
